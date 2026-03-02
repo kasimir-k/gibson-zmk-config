@@ -1,0 +1,5 @@
+config SHIELD_GIBSON_LEFT
+    def_bool $(shields_list_contains,gibson_left)
+
+config SHIELD_GIBSON_RIGHT
+    def_bool $(shields_list_contains,gibson_right)

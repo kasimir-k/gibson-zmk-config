@@ -1,0 +1,16 @@
+if SHIELD_GIBSON_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "gibson"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_GIBSON_LEFT
+
+if SHIELD_GIBSON_LEFT || SHIELD_GIBSON_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_GIBSON_LEFT || SHIELD_GIBSON_RIGHT
