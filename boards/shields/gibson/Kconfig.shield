@@ -3,3 +3,6 @@ config SHIELD_GIBSON_LEFT
 
 config SHIELD_GIBSON_RIGHT
     def_bool $(shields_list_contains,gibson_right)
+
+config SHIELD_GIBSON_DONGLE
+    def_bool $(shields_list_contains,gibson_dongle)
