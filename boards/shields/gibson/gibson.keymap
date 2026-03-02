@@ -45,7 +45,7 @@
             bindings = < &kp SLASH  &kp NUBS  &kp NUHS  &kp BSPC  &trans    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         num {
-            bindings = < &kp 1  &kp 2  &kp 4  &kp 8  &trans    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp N1  &kp N2  &kp N4  &kp N8  &trans    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         func {
             bindings = < &kp F1  &kp F2  &kp F4  &kp F8  &trans    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
@@ -54,13 +54,13 @@
             bindings = < &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &mo PG_UP_DOWN    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         pg_up_down {
-            bindings = < &kp HOME  &kp PG_UP  &kp PG_DOWN  &kp END  &none    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &none    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         mouse {
             bindings = < &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         scroll {
-            bindings = < &mmv SCRL_LEFT  &mmv SCRL_UP  &mmv SCRL_DOWN  &mmv SCRL_RIGHT  &none    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         zxcv {
             bindings = < &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &none    &trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL>;
