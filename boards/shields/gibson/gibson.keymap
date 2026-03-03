@@ -80,6 +80,8 @@
 
     combos {
         compatible = "zmk,combos";
+
+        // ALPHA
         combo_d COMBO(<0 1>, ALPHA, <&kp D>);
         combo_f COMBO(<1 2>, ALPHA, <&kp F>);
         combo_g COMBO(<2 3>, ALPHA, <&kp G>);
@@ -91,16 +93,57 @@
         combo_c COMBO(<0 1 3>, ALPHA, <&kp C>);
         combo_v COMBO(<0 1 2>, ALPHA, <&kp V>);
         combo_dot COMBO(<0 1 2 3>, ALPHA, <&kp PERIOD>);
-        combo_l COMBO(<4 5>, ALPHA, <&kp L>);
-        combo_u COMBO(<5 6>, ALPHA, <&kp U>);
-        combo_m COMBO(<6 7>, ALPHA, <&kp M>);
-        combo_y COMBO(<4 6>, ALPHA, <&kp Y>);
-        combo_k COMBO(<5 7>, ALPHA, <&kp K>);
-        combo_p COMBO(<4 7>, ALPHA, <&kp P>);
-        combo_j COMBO(<5 6 7>, ALPHA, <&kp J>);
-        combo_a_dia COMBO(<4 6 7>, ALPHA, <&kp SINGLE_QUOTE>); // Ä
-        combo_o_dia COMBO(<4 5 7>, ALPHA, <&kp SEMICOLON>); // Ö
-        combo_b COMBO(<4 5 6>, ALPHA, <&kp B>);
-        combo_comma COMBO(<4 5 6 7>, ALPHA, <&kp COMMA>);
+        combo_l COMBO(<6 7>, ALPHA, <&kp L>);
+        combo_u COMBO(<7 8>, ALPHA, <&kp U>);
+        combo_m COMBO(<8 9>, ALPHA, <&kp M>);
+        combo_y COMBO(<6 8>, ALPHA, <&kp Y>);
+        combo_k COMBO(<7 9>, ALPHA, <&kp K>);
+        combo_p COMBO(<6 9>, ALPHA, <&kp P>);
+        combo_j COMBO(<7 8 9>, ALPHA, <&kp J>);
+        combo_a_dia COMBO(<6 8 9>, ALPHA, <&kp SINGLE_QUOTE>); // Ä
+        combo_o_dia COMBO(<6 7 9>, ALPHA, <&kp SEMICOLON>); // Ö
+        combo_b COMBO(<6 7 8>, ALPHA, <&kp B>);
+        combo_comma COMBO(<6 7 8 9>, ALPHA, <&kp COMMA>);
+
+        // CC_PUNC
+        combo_plus COMBO(<0 1>, CC_PUNC, <&kp MINUS>);
+        //combo_arrow COMBO(<1 2>, CC_PUNC, <&kp TBC>);
+        combo_tab COMBO(<2 3>, CC_PUNC, <&kp TAB>);
+        combo_dia COMBO(<2 3>, CC_PUNC, <&kp RIGHT_BRACKET>);
+        combo_caps_word COMBO(<0 3>, CC_PUNC, <&caps_word>);
+        combo_enter COMBO(<1 2 3>, CC_PUNC, <&kp ENTER>);
+        combo_a_rng COMBO(<0 2 3>, CC_PUNC, <&kp LEFT_BRACKET>); // Å
+        combo_acut COMBO(<0 2 3>, CC_PUNC, <&kp EQUAL>); // ´
+
+        // NUM
+        combo_3 COMBO(<0 1>, NUM, <&kp N3>);
+        combo_5 COMBO(<0 2>, NUM, <&kp N5>);
+        combo_6 COMBO(<1 2>, NUM, <&kp N6>);
+        combo_7 COMBO(<0 1 2>, NUM, <&kp N7>);
+        combo_9 COMBO(<0 3>, NUM, <&kp N9>);
+        combo_0 COMBO(<1 3>, NUM, <&kp N0>);
+        combo_divide COMBO(<0 1 3>, NUM, <&kp KP_DIVIDE>);
+        combo_minus COMBO(<2 3>, NUM, <&kp KP_MINUS>);
+        combo_multiply COMBO(<0 2 3>, NUM, <&kp KP_MULTIPLY>);
+        combo_kp_plus COMBO(<1 2 3>, NUM, <&kp KP_PLUS>);
+        combo_kp_dot COMBO(<1 2 3>, NUM, <&kp PERIOD>);
+
+        // FUNC
+        combo_f3 COMBO(<0 1>, FUNC, <&kp F3>);
+        combo_f5 COMBO(<0 2>, FUNC, <&kp F5>);
+        combo_f6 COMBO(<1 2>, FUNC, <&kp F6>);
+        combo_f7 COMBO(<0 1 2>, FUNC, <&kp F7>);
+        combo_f9 COMBO(<0 3>, FUNC, <&kp F9>);
+        combo_f10 COMBO(<1 3>, FUNC, <&kp F10>);
+        combo_f11 COMBO(<0 1 3>, FUNC, <&kp F11>);
+        combo_f12 COMBO(<2 3>, FUNC, <&kp F12>);
+        combo_f13 COMBO(<0 2 3>, FUNC, <&kp F13>);
+        combo_f14 COMBO(<1 2 3>, FUNC, <&kp F14>);
+        combo_f15 COMBO(<0 1 2 3>, FUNC, <&kp F15>);
+
+        // MOUSE
+        combo_right_click COMBO(<4 9>, MOUSE, <&mkp MB2>);
+        combo_midle_click COMBO(<4 8 9>, MOUSE, <&mkp MB3>)
+
     };
 };
