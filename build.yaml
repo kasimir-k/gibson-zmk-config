@@ -1,2 +1,5 @@
 board: [ "nice_nano" ]
 shield: [ "gibson_left", "gibson_right", "gibson_dongle" ]
+include:
+  - board: nice_nano
+    shield: settings_reset
