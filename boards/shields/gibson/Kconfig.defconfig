@@ -7,6 +7,9 @@ endif # SHIELD_GIBSON_LEFT || SHIELD_GIBSON_RIGHT
 
 if SHIELD_GIBSON_DONGLE
 
+config ZMK_POINTING
+    default y
+
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
     default "Gibson"

@@ -87,7 +87,7 @@
         combo_g COMBO(<2 3>, ALPHA, <&kp G>);
         combo_q COMBO(<0 2>, ALPHA, <&kp Q>);
         combo_w COMBO(<1 3>, ALPHA, <&kp W>);
-        combo_r COMBO(<0 4>, ALPHA, <&kp R>);
+        combo_r COMBO(<0 3>, ALPHA, <&kp R>);
         combo_z COMBO(<1 2 3>, ALPHA, <&kp Z>);
         combo_x COMBO(<0 2 3>, ALPHA, <&kp X>);
         combo_c COMBO(<0 1 3>, ALPHA, <&kp C>);
