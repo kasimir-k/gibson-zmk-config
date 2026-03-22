@@ -54,40 +54,40 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = < &kp A  &kp S  &kp E  &kp T &kp SPACE    &htl LAYERS_1 ALPHA  &kp H  &kp I  &kp O  &kp N >;
+            bindings = < &kp A  &kp S  &kp E  &kp T &kp SPACE                                        &htl LAYERS_1 ALPHA  &kp H  &kp I  &kp O  &kp N >;
         };
         layers_1 {
-            bindings = < &none  &none  &none  &none  &mo CC_PUNC    &trans  &htl ZXCV MOUSE  &htl VOLUME CURSOR &to NUM &mo LAYERS_2>;
+            bindings = < &none  &none  &none  &none  &mo CC_PUNC                                     &none  &htl ZXCV MOUSE  &htl VOLUME CURSOR &to NUM &mo LAYERS_2>;
         };
         layers_2 {
-            bindings = < &none  &none  &none  &none  &mo CC_PUNC    &trans  &to SCRL_WHEEL  &to PG_UP_DOWN &to FUNC &trans>;
+            bindings = < &none  &none  &none  &none  &mo CC_PUNC                                     &none  &to SCRL_WHEEL  &to PG_UP_DOWN &to FUNC &trans>;
         };
         cc_punc {
-            bindings = < &kp SLASH  &kp NUBS  &kp NUHS  &kp BSPC  &trans    &trans  &sk LCMD  &sk LALT  &sk LSHFT  &sk LCTRL>;
+            bindings = < &kp SLASH  &kp NUBS  &kp NUHS  &kp BSPC  &none                              &htl LAYERS_1 ALPHA  &sk LCMD  &sk LALT  &sk LSHFT  &sk LCTRL>;
         };
         num {
-            bindings = < &kp N1  &kp N2  &kp N4  &kp N8  &trans    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp N1  &kp N2  &kp N4  &kp N8  &mo CC_PUNC                                 &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         func {
-            bindings = < &kp F1  &kp F2  &kp F4  &kp F8  &trans    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp F1  &kp F2  &kp F4  &kp F8  &none                                       &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         cursor {
-            bindings = < &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &mo PG_UP_DOWN    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &mo PG_UP_DOWN                       &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         pg_up_down {
-            bindings = < &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &none    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &none                              &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         mouse {
-            bindings = < &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         scroll {
-            bindings = < &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none    &trans  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none        &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         zxcv {
-            bindings = < &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &none    &trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &none                           &htl LAYERS_1 ALPHA  &trans  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         volume {
-            bindings = < &none  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE  &none    &none  &none  &none  &none  &none>;
+            bindings = < &none  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE  &none                        &none  &none  &none  &none  &none>;
         };
 
     };
