@@ -27,17 +27,17 @@
     bindings = binds; \
 }
 
+&mmv {
+    time-to-max-speed-ms = <600>;
+    acceleration-exponent = <2>;
+};
+
+&msc {
+    time-to-max-speed-ms = <600>;
+    acceleration-exponent = <2>;
+};
+
 / {
-    &mmv {
-        time-to-max-speed-ms = <600>;
-        acceleration-exponent = <2>;
-    };
-
-    &msc {
-        time-to-max-speed-ms = <600>;
-        acceleration-exponent = <2>;
-    };
-
     behaviors {
         htl: hold_tap_layers {
             compatible = "zmk,behavior-hold-tap";
