@@ -33,7 +33,7 @@
 };
 
 &msc {
-    time-to-max-speed-ms = <4000>;
+    time-to-max-speed-ms = <12000>;
     acceleration-exponent = <1>;
 };
 
@@ -48,13 +48,22 @@
             display-name = "Hold-Tap-Layer";
         };
     };
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+
+    macros {
+        arrow_func: arrow_func {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp LS(N0) &kp LS(NUBS)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = < &kp A  &kp S  &kp E  &kp T &kp SPACE                                        &htl LAYERS_1 ALPHA  &kp H  &kp I  &kp O  &kp N >;
+            bindings = < &kp A  &kp S  &kp E  &kp T &lt SPACE CC_PUNC                                &htl LAYERS_1 ALPHA  &kp H  &kp I  &kp O  &kp N >;
         };
         num {
             bindings = < &kp N1  &kp N2  &kp N4  &kp N8  &mo CC_PUNC                                 &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
@@ -121,13 +130,14 @@
 
         // CC_PUNC
         combo_plus COMBO(<0 1>, CC_PUNC, <&kp MINUS>);
-        //combo_arrow COMBO(<1 2>, CC_PUNC, <&kp TBC>);
+        combo_arrow COMBO(<1 2>, CC_PUNC, <&arrow_func>);
         combo_tab COMBO(<2 3>, CC_PUNC, <&kp TAB>);
-        combo_dia COMBO(<2 3>, CC_PUNC, <&kp RIGHT_BRACKET>);
+        combo_dia COMBO(<0 2>, CC_PUNC, <&kp RIGHT_BRACKET>);
         combo_caps_word COMBO(<0 3>, CC_PUNC, <&caps_word>);
         combo_enter COMBO(<1 2 3>, CC_PUNC, <&kp ENTER>);
         combo_a_rng COMBO(<0 2 3>, CC_PUNC, <&kp LEFT_BRACKET>); // Å
         combo_acut COMBO(<0 2 3>, CC_PUNC, <&kp EQUAL>); // ´
+        combo_esc COMBO(<0 1 2 3>, CC_PUNC, <&kp ESC>); // ´
 
         // NUM
         combo_3 COMBO(<0 1>, NUM, <&kp N3>);
