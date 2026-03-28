@@ -63,7 +63,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = < &kp A  &kp S  &kp E  &kp T &lt SPACE CC_PUNC                                &htl LAYERS_1 ALPHA  &kp H  &kp I  &kp O  &kp N >;
+            bindings = < &kp A  &kp S  &kp E  &kp T &lt CC_PUNC SPACE                                &htl LAYERS_1 ALPHA  &kp H  &kp I  &kp O  &kp N >;
         };
         num {
             bindings = < &kp N1  &kp N2  &kp N4  &kp N8  &mo CC_PUNC                                 &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
