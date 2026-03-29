@@ -136,7 +136,7 @@
         combo_caps_word COMBO(<0 3>, CC_PUNC, <&caps_word>);
         combo_enter COMBO(<1 2 3>, CC_PUNC, <&kp ENTER>);
         combo_a_rng COMBO(<0 2 3>, CC_PUNC, <&kp LEFT_BRACKET>); // Å
-        combo_acut COMBO(<0 2 3>, CC_PUNC, <&kp EQUAL>); // ´
+        combo_acut COMBO(<0 1 2>, CC_PUNC, <&kp EQUAL>); // ´
         combo_esc COMBO(<0 1 2 3>, CC_PUNC, <&kp ESC>); // ´
 
         // NUM
@@ -150,7 +150,7 @@
         combo_minus COMBO(<2 3>, NUM, <&kp KP_MINUS>);
         combo_multiply COMBO(<0 2 3>, NUM, <&kp KP_MULTIPLY>);
         combo_kp_plus COMBO(<1 2 3>, NUM, <&kp KP_PLUS>);
-        combo_kp_dot COMBO(<1 2 3>, NUM, <&kp PERIOD>);
+        combo_kp_dot COMBO(<0 1 2 3>, NUM, <&kp PERIOD>);
 
         // FUNC
         combo_f3 COMBO(<0 1>, FUNC, <&kp F3>);
@@ -164,10 +164,6 @@
         combo_f13 COMBO(<0 2 3>, FUNC, <&kp F13>);
         combo_f14 COMBO(<1 2 3>, FUNC, <&kp F14>);
         combo_f15 COMBO(<0 1 2 3>, FUNC, <&kp F15>);
-
-        // MOUSE
-        combo_right_click COMBO(<4 9>, MOUSE, <&mkp MB2>);
-        combo_midle_click COMBO(<4 8 9>, MOUSE, <&mkp MB3>);
 
     };
 };
