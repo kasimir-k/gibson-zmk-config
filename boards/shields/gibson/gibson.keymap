@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/behaviors.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 30
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 
 #include <dt-bindings/zmk/pointing.h>
 
@@ -66,7 +66,7 @@
             bindings = < &kp A  &kp S  &kp E  &kp T &lt CC_PUNC SPACE                                &htl LAYERS_1 ALPHA  &kp H  &kp I  &kp O  &kp N >;
         };
         num {
-            bindings = < &kp N1  &kp N2  &kp N4  &kp N8  &mo CC_PUNC                                 &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
+            bindings = < &kp N1  &kp N2  &kp N4  &kp N8  &lt CC_PUNC SPACE                           &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
         };
         func {
             bindings = < &kp F1  &kp F2  &kp F4  &kp F8  &none                                       &htl LAYERS_1 ALPHA  &kp LCMD  &kp LALT  &kp LSHFT  &kp LCTRL>;
