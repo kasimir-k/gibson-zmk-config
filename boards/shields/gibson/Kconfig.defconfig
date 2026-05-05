@@ -18,7 +18,7 @@ config ZMK_POINTING_SMOOTH_SCROLLING
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Gibson"
+    default "gibson"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
