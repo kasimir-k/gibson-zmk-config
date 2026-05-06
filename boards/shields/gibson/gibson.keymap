@@ -33,7 +33,7 @@
 };
 
 &msc {
-    time-to-max-speed-ms = <1200>;
+    time-to-max-speed-ms = <2000>;
     acceleration-exponent = <1>;
 };
 
@@ -164,6 +164,21 @@
         combo_f13 COMBO(<0 2 3>, FUNC, <&kp F13>);
         combo_f14 COMBO(<1 2 3>, FUNC, <&kp F14>);
         combo_f15 COMBO(<0 1 2 3>, FUNC, <&kp F15>);
+
+        // MOUSE
+        combo_right_click {
+            timeout-ms = <200>;
+            key-positions = <4 9>;
+            layers = <MOUSE>;
+            bindings = <&mkp MB2>;
+        };
+        combo_midle_click {
+            timeout-ms = <200>;
+            key-positions = <4 8 9>;
+            layers = <MOUSE>;
+            bindings = <&mkp MB3>;
+        };
+
 
     };
 };
